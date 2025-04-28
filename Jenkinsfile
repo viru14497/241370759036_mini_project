@@ -29,7 +29,7 @@ pipeline {
             steps {
                 echo "Running Checkov..."
                 sh '''
-                    checkov -d . --quiet || echo "Checkov scan completed with findings."
+                    checkov -d . --quiet || echo "Checkov scan completed with findings." 
                 '''
             }
         }
