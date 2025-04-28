@@ -17,9 +17,9 @@ pipeline {
             steps {
                 echo "Installing Checkov and Prowler..."
                 sh '''
-                    sudo yum install -y python3 git
-                    pip3 install --upgrade pip
-                    pip3 install checkov
+                    // sudo yum install -y python3 git
+                    // pip3 install --upgrade pip
+                    // pip3 install checkov
                     git clone https://github.com/prowler-cloud/prowler.git || true
                 '''
             }
